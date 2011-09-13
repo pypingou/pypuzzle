@@ -41,10 +41,7 @@ def are_in_same_row(cell, free_cell):
     ycell = list(cell)[0][1]
     yfreecell = list(free_cell)[0][1]
 
-    if ycell == yfreecell:
-        return True
-    else:
-        return False
+    return ycell == yfreecell
 
 
 def are_in_same_column(cell, free_cell):
@@ -55,10 +52,7 @@ def are_in_same_column(cell, free_cell):
     xcell = list(cell)[0][0]
     xfreecell = list(free_cell)[0][0]
 
-    if xcell == xfreecell:
-        return True
-    else:
-        return False
+    return xcell == xfreecell
 
 
 def check_results(table):
@@ -74,13 +68,10 @@ def check_results(table):
             rows[row] = ["", "", "", ""]
             rows[row][col] = child.get_label()
 
-    if rows[0] == ['1', '2', '3', '4'] \
+    return rows[0] == ['1', '2', '3', '4'] \
         and rows[1] == ['5', '6', '7', '8'] \
         and rows[2] == ['9', '10', '11', '12'] \
-        and rows[3] == ['13', '14', '15', '']:
-        return True
-    else:
-        return False
+        and rows[3] == ['13', '14', '15', '']
 
 
 def exit_game(widget=None):
