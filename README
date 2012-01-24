@@ -1,0 +1,10 @@
+pypuzzle
+========
+
+Simple puzzle game where you have to re-order 15 box randomnized
+in 16 squares.
+
+Dependencies:
+ - pygtk >= 2.0
+
+License: GPLv3 or any later version
